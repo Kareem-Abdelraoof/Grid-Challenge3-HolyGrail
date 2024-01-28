@@ -26,3 +26,108 @@ header {
     font-weight: 900;
     border-bottom: 1px solid #ddd;
 }
+
+nav {
+    padding: 30px;
+    line-height: 2em;
+    border-right: 1px solid #ddd;
+}
+
+article h2 {
+    font-size: 50px;
+    font-weight: 800;
+    padding: 30px;
+    max-width: 800px;
+    text-align: center;
+}
+
+article {
+    padding: 30px;
+}
+
+article p {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+aside {
+    border-left: solid 1px #ddd;
+    padding: 30px;
+}
+
+aside div {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+aside p {
+    font-size: 22px;
+}
+
+footer {
+    border-top: solid 1px #ddd;
+    grid-column: span 3;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media screen and (max-width:1270px) {
+    nav {
+        grid-column: span 3;
+        text-align: center;
+        border-right: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    article {
+        grid-column: span 2;
+    }
+
+    article h2 {
+        font-size: 36px;
+    }
+
+    aside {
+        padding: 15px;
+    }
+
+    aside div {
+        font-size: 20px;
+    }
+
+    aside p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    article {
+        grid-column: span 3;
+        border-bottom: 1px solid #ddd;
+    }
+
+    aside {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    aside p,
+    div>div.imp {
+        display: inline-block;
+    }
+
+    aside>div {
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
